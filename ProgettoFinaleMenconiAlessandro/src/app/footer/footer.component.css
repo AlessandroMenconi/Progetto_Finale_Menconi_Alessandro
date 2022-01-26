@@ -1,0 +1,36 @@
+html,body,.container{ height: 100%; margin: 0; padding: 0; }
+
+.footer {
+    position:absolute;
+    bottom:0;
+    left:0;
+    width:100%;
+    background-color: black;
+    padding: 40px
+    }
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
+body,html,.container{
+    font-family: 'Roboto', sans-serif;
+}
+.link{
+    padding: 10px;
+}
+.bi-instagram{
+    margin: 10px;
+    font-size: 30px;
+    color: white;
+}
+.bi-facebook{
+    margin: 10px;
+    font-size: 30px;
+    color: white;
+}
+.bi-linkedin{
+    margin: 10px;
+    font-size: 30px;
+    color: white;
+}
+.contorno{
+    text-shadow: 2px  2px 4px black;
+    
+  }
