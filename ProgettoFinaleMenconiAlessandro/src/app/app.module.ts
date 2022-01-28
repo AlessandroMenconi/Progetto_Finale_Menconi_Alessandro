@@ -11,9 +11,15 @@ import { FormComponent } from './form/form.component';
 import { CardUserComponent } from './card-user/card-user.component';
 import { ClientComponent } from './client/client.component';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
-import { HttpInterceptorInterceptor } from './http-interceptor.interceptor';
 import { FormsModule } from '@angular/forms';
 import { AddCompComponent } from './add-comp/add-comp.component';
+import { TableFattureComponent } from './table-fatture/table-fatture.component';
+import { FormFattureComponent } from './form-fatture/form-fatture.component';
+import { CardFattureComponent } from './card-fatture/card-fatture.component';
+import { AddFattureComponent } from './add-fatture/add-fatture.component';
+import { HttpInterceptorInterceptor } from './http-interceptor.interceptor';
+import { DettagliFattureComponent } from './dettagli-fatture/dettagli-fatture.component';
+import { MainComponent } from './main/main.component';
 
 
 @NgModule({
@@ -26,6 +32,13 @@ import { AddCompComponent } from './add-comp/add-comp.component';
     CardUserComponent,
     ClientComponent,
     AddCompComponent,
+    TableFattureComponent,
+    FormFattureComponent,
+    CardFattureComponent,
+    AddFattureComponent,
+    DettagliFattureComponent,
+    MainComponent,
+
   
   
   ],
@@ -35,10 +48,12 @@ import { AddCompComponent } from './add-comp/add-comp.component';
     NgbModule,
     HttpClientModule,
     FormsModule,
+    
+    
   ],
   providers: [{
     provide: HTTP_INTERCEPTORS,
-    useClass: HttpInterceptorInterceptor,
+    useClass:HttpInterceptorInterceptor,
     multi: true,
   
   }],

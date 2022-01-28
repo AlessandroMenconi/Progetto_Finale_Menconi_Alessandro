@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Client } from '../classes/client';
-import { ClientService } from '../client.service';
+import { IndirizzoSedeLegale } from '../classes/indirizzo-sede-legale';
+import { ClientService } from '../services/client.service';
 
 @Component({
   selector: 'app-form',
@@ -11,6 +12,7 @@ import { ClientService } from '../client.service';
 export class FormComponent implements OnInit {
   client!:Client;
   tipoCliente:string[]=[]
+  
 
   constructor(
     private route:ActivatedRoute,
@@ -18,6 +20,9 @@ export class FormComponent implements OnInit {
     private router:Router) { }
 
   ngOnInit(): void {
+    this.clientService.getTipoClient().subscribe(data=>{
+      this.tipoCliente=data;
+    })
     this.route.params.subscribe(data=>{
       this.clientService.getClientById(data['id']).subscribe(response=> this.client=response)
     })

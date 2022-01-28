@@ -1,14 +1,15 @@
-<h2 class="m-auto">Edit Client</h2>
-<form class="my-3 bg-white">
+
+<h2 class="m-auto text-white">Add Client</h2>
+<form class="mt-1 p-1 bg-white">
     <div class="form-group">
         <label>Ragione Sociale</label>
         <input type="text" [(ngModel)]="client.ragioneSociale" name="ragioneSociale" class="form-control"
-            placeholder="name">
+            placeholder="Regione Sociale">
     </div>
     <div class="form-group">
         <label>Partita Iva</label>
         <input type="text" [(ngModel)]="client.partitaIva" name="partitaIva" class="form-control"
-            placeholder="lastname">
+            placeholder="P.iva">
     </div>
     <div class="form-group">
         <label>Tipo cliente</label>
@@ -58,19 +59,19 @@
         <div class="form-row">
             <div class="col">
                 <label>Via</label>
-                <input type="text" class="form-control" placeholder="Via">
+                <input type="text" [(ngModel)]="client.indirizzoSedeOperativa.via" name="via"class="form-control" placeholder="Via">
             </div>
             <div class="col">
                 <label>Civico</label>
-                <input type="text" class="form-control" placeholder="Civico">
+                <input type="text" [(ngModel)]="client.indirizzoSedeOperativa.civico" name="civico" class="form-control" placeholder="Civico">
             </div>
             <div class="col">
                 <label>Cap</label>
-                <input type="text" class="form-control" placeholder="Cap">
+                <input type="text" [(ngModel)]="client.indirizzoSedeOperativa.cap" name="cap" class="form-control" placeholder="Cap">
             </div>
             <div class="col">
                 <label>Località</label>
-                <input type="text" class="form-control" placeholder="Località">
+                <input type="text" [(ngModel)]="client.indirizzoSedeOperativa.localita" name="localita" class="form-control" placeholder="Località">
             </div>
         </div>
 </div>
@@ -82,19 +83,19 @@
         <div class="form-row">
             <div class="col">
                 <label>Via</label>
-                <input type="text" class="form-control" placeholder="Via">
+                <input type="text"[(ngModel)]="client.indirizzoSedeLegale.via" name="via" class="form-control" placeholder="Via">
             </div>
             <div class="col">
                 <label>Civico</label>
-                <input type="text" class="form-control" placeholder="Civico">
+                <input type="text"[(ngModel)]="client.indirizzoSedeLegale.civico" name="civico" class="form-control" placeholder="Civico">
             </div>
             <div class="col">
                 <label>Cap</label>
-                <input type="text" class="form-control" placeholder="Cap">
+                <input type="text"[(ngModel)]="client.indirizzoSedeLegale.cap" name="cap" class="form-control" placeholder="Cap">
             </div>
             <div class="col">
                 <label>Località</label>
-                <input type="text" class="form-control" placeholder="Località">
+                <input type="text"[(ngModel)]="client.indirizzoSedeLegale.localita" name="localita" class="form-control" placeholder="Località">
             </div>
         </div>
 </div>
@@ -114,5 +115,7 @@
     <div class="form-group">
         <button type="button" class="btn btn-dark form-control" (click)="addNewClient()">Add</button>
     </div>
+  
 </form>
+
 

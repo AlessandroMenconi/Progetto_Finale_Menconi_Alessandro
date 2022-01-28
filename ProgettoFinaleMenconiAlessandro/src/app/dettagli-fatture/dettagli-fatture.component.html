@@ -1,0 +1,42 @@
+<h2 class="m-auto text-white">Edit Enovice</h2>
+ <form class="my-3 bg-white p-1">
+    <div class="form-group">
+        <label><b>Business Name</b></label>
+        <!-- <input type="text" [(ngModel)]="fatture.cliente.ragioneSociale" name="ragioneSociale" class="form-control"
+            placeholder="name"> -->
+            <p><em>{{fatture.cliente.ragioneSociale}}</em></p>
+    </div>
+    <div class="form-group">
+        <label><b>Name</b></label>
+        <!-- <input type="text" [(ngModel)]="fatture.cliente.nomeContatto" name="nomeContatto" class="form-control"> -->
+        <p><em>{{fatture.cliente.nomeContatto}}</em></p>
+    </div>
+    <div class="form-group">
+        <label><b>Lastname</b></label>
+        <!-- <input type="text" [(ngModel)]="fatture.cliente.cognomeContatto" name="cognomeContatto" class="form-control"> -->
+        <p><em>{{fatture.cliente.cognomeContatto}}</em></p>
+    </div>
+    <div class="form-group">
+        <label >Date</label>
+        <input type="text"[(ngModel)]="fatture.data" name="data" class="form-control">
+    </div>
+    <div class="form-group">
+        <label >Number</label>
+        <input type="text" [(ngModel)]="fatture.numero" name="numero" class="form-control">
+    </div>
+    <div class="form-group">
+        <label>Year</label>
+        <input type="text" [(ngModel)]="fatture.anno" name="anno" class="form-control" >
+    </div>
+   
+    <div class="form-group">
+        <label>Amount</label>
+        <input type="text" [(ngModel)]="fatture.importo" name="partitaIva" class="form-control">
+
+    </div>
+    <div class="form-group">
+         <button type="button" class="btn btn-dark form-control" (click)="saveEnvoice()">Save edit</button> 
+  </div>   
+ </form>
+
+ 

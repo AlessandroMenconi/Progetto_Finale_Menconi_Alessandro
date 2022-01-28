@@ -1,4 +1,5 @@
-<table class="table table-striped bg-white mt-5">
+<h2 class="m-0 p-0 text-white">Client</h2>
+<table class="table table-striped bg-white mt-1 p-1">
     <thead>
         <tr>
             <th scope="col">#</th>
@@ -24,11 +25,11 @@
             <td>{{item.emailContatto}}</td>
             <td>{{item.ragioneSociale}}</td>
             <td>
-                <button type="button" class="btn btn-secondary btn-sm" (click)="detail(item)">i</button>
+                <button type="button" class="btn  " (click)="detail(item)"><i class="bi bi-info-square-fill" style="font-size: 25px;"></i></button>
             </td>
             <td>
-                <button type="button" class="btn btn-secondary btn-sm" (click)="removeClient(item)"><i
-                        class="bi bi-trash"></i></button>
+                <button type="button" class="btn  " (click)="removeClient(item)"><i
+                        class="bi bi-trash-fill" style="font-size: 25px;"></i></button>
             </td>
         </tr>
     </tbody>

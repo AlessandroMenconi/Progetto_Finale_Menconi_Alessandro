@@ -1,6 +1,6 @@
 .carousel-item {
     height: 20vh;
-    min-height: 100px;
+    min-height: 150px;
     background: no-repeat center center scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -47,6 +47,7 @@
   }
   
   .navbar-nav {
+    position: static;
     text-align: center;
   }
   
@@ -92,5 +93,6 @@
     font-size:25px;
   }
   .contorno{
+    font-size: 20px;
     text-shadow: 2px  2px 4px black;
   }

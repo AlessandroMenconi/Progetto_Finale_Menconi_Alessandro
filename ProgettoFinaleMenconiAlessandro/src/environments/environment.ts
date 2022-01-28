@@ -5,6 +5,9 @@
 export const environment = {
   production: false,
   clienti:"http://epicode.online/epicodebeservice_v2/",
+  fatture:"http://epicode.online/epicodebeservice_v2/",
+  
+  
  
 
 };

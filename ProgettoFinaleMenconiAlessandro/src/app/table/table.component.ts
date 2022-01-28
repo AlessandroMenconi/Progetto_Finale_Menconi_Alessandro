@@ -3,7 +3,7 @@ import { Router } from '@angular/router';
 import { Client } from '../classes/client';
 
 
-import { ClientService } from '../client.service';
+import { ClientService } from '../services/client.service';
 
 @Component({
   selector: 'app-table',

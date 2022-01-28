@@ -1,0 +1,45 @@
+<div class="container-fluid card text-white bg-secondary my-3" style="max-width: 35rem;">
+   
+    <div class="card-header" style="font-size: 20px;">{{fatture.cliente.nomeContatto}} {{fatture.cliente.cognomeContatto}} </div>
+    <div class="card-body">
+        <h5 class="card-title">Partita IVA: {{fatture.cliente.partitaIva}}</h5>
+        <p class="card-text">id: {{fatture.cliente.id}}</p>
+        <p class="card-text">RagioneSociale: {{fatture.cliente.ragioneSociale}}</p>
+        <p class="card-text">TipoCliente: {{fatture.cliente.tipoCliente}}</p>
+        <p class="card-text">Email: {{fatture.cliente.email}}</p>
+        <p class="card-text">Pec: {{fatture.cliente.pec}}</p>
+        <p class="card-text">Telefono: {{fatture.cliente.telefono}}</p>
+        <p class="card-text">Email Contatto: {{fatture.cliente.emailContatto}}</p>
+        <p class="card-text"><b>Indirizzo Sede Operativa:</b></p>
+        <ul>
+            <li>via: {{fatture.cliente.indirizzoSedeOperativa.via}}</li>
+            <li>Civico: {{fatture.cliente.indirizzoSedeOperativa.civico}}</li>
+            <li>Cap: {{fatture.cliente.indirizzoSedeOperativa.cap}}</li>
+            <li>Località: {{fatture.cliente.indirizzoSedeOperativa.localita}}</li>
+            <ul>
+                <b>Comune</b>
+                <li>Nome: {{fatture.cliente.indirizzoSedeOperativa.comune.nome}}</li>
+                <li>Provincia: {{fatture.cliente.indirizzoSedeOperativa.comune.provincia.nome}}</li>
+            </ul>
+        </ul>
+        <p class="card-text"><b>indirizzo Sede Legale:</b></p>
+        <ul>
+            <li>Via: {{fatture.cliente.indirizzoSedeLegale.via}}</li>
+            <li>Civico: {{fatture.cliente.indirizzoSedeLegale.civico}}</li>
+            <li>Cap: {{fatture.cliente.indirizzoSedeLegale.cap}}</li>
+            <li>Località: {{fatture.cliente.indirizzoSedeLegale.localita}}</li>
+            <ul>
+                <b>Comune</b>
+                <li>Nome: {{fatture.cliente.indirizzoSedeLegale.comune.nome}}</li>
+                <li>Provincia: {{fatture.cliente.indirizzoSedeOperativa.comune.provincia.nome}}</li>
+            </ul>
+        </ul>
+        <p class="card-text">Data Inserimento: {{fatture.cliente.dataInserimento}}</p>
+        
+        <p class="card-text">Fatturato Annuale: {{fatture.fatturatoAnnuale}}</p>
+        <p class="card-text">Data Ultimo Contatto: {{fatture.cliente.dataUltimoContatto}}</p> 
+        <button type="button" class="btn btn-dark form-control" (click)="envoiceDetail(fatture)">GO TO EDIT</button>
+            
+     </div>
+</div>
+

@@ -1,10 +1,11 @@
 import { IndirizzoSedeLegale } from "./indirizzo-sede-legale";
 import { IndirizzoSedeOperativa } from "./indirizzo-sede-operativa";
+import { TipoCliente } from "./tipo-cliente";
 export class Client {
     id!:number;
     ragioneSociale!:string;
     partitaIva!:string;
-    tipoCliente!:string;
+    tipoCliente!:TipoCliente;
     email!:string;
     pec!:string;
     telefono!:string;
@@ -17,9 +18,12 @@ export class Client {
     dataInserimento!:string;
     dataUltimoContatto!:string;
     fatturatoAnnuale!:number;
+    
+    content=[]
   
 
     constructor(){
+        this.tipoCliente= new TipoCliente()
         this.indirizzoSedeOperativa= new IndirizzoSedeOperativa();
         this.indirizzoSedeLegale= new IndirizzoSedeLegale();
         

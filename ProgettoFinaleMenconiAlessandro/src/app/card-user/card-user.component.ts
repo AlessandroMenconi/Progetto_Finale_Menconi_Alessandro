@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 
 import { Client } from '../classes/client';
-import { ClientService } from '../client.service';
+import { ClientService } from '../services/client.service';
 
 @Component({
   selector: 'app-card-user',

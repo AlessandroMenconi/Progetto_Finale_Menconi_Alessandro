@@ -1,0 +1,34 @@
+<h2 class="text-white m-0">Envoice</h2>
+<table class="table table-striped  bg-white mt-1">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Date</th>
+           
+            <th scope="col">Number</th>
+            
+            <th scope="col">Year</th>
+            
+            <th scope="col">Amount</th>
+
+            <th scope="col">Envoice Status</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let item of fatture;index as i;">
+            <th scope="row">{{item.id}}</th>
+            <td>{{item.data}}</td>
+            <td>{{item.numero}}</td>
+            <td>{{item.anno}}</td>
+            <td>{{item.importo}}</td>
+            <td>Non Pagata</td>
+            <td>
+                <button type="button" class="btn  btn-sm"(click)="dettagli(item)" ><i class="bi bi-info-square-fill" style="font-size: 25px;"></i></button>
+            </td>
+            <td>
+                <button type="button" class="btn  btn-sm" (click)="removeFattura(item)"><i class="bi bi-trash-fill" style="font-size: 25px;" ></i></button>
+            </td>
+        </tr>
+       
+    </tbody>
+</table>

@@ -7,4 +7,10 @@ export class IndirizzoSedeOperativa {
     cap!:string;
     localita!:string;
     comune!:Comune;
+    
+    constructor(){
+        this.comune=new Comune;
+    }
 }
+
+
